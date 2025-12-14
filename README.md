@@ -24,7 +24,7 @@ Instead of passively reading a blog/newsletter, you drop into a guided conversat
 
 Thin vertical slices that integrate early and often (frontend ↔ backend ↔ DB ↔ AI), optimized for getting an end-to-end system running quickly:
 
-1. [ ] **Scaffold + “it runs”**
+1. [X] **Scaffold + “it runs”**
    - Minimal Next.js app (`frontend/`) and FastAPI app (`backend/`)
    - Single “health” path: Web calls API, API returns JSON
    - Setup shadcn design system
