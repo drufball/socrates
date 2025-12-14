@@ -3,6 +3,33 @@
   "dependencies": {
     "tessl-labs/spec-driven-development": {
       "version": "1.0.4"
+    },
+    "tessl/npm-next": {
+      "version": "16.0.0"
+    },
+    "tessl/npm-tailwindcss": {
+      "version": "4.1.0"
+    },
+    "tessl/pypi-fastapi": {
+      "version": "0.116.0"
+    },
+    "tessl/pypi-uvicorn": {
+      "version": "0.37.0"
+    },
+    "tessl/pypi-pytest": {
+      "version": "8.4.0"
+    },
+    "tessl/pypi-httpx": {
+      "version": "0.28.0"
+    },
+    "tessl/npm-openapi-typescript": {
+      "version": "7.9.0"
+    },
+    "tessl/npm-swagger-typescript-api": {
+      "version": "13.2.0"
+    },
+    "tessl/npm-axios": {
+      "version": "1.11.0"
     }
   }
 }
