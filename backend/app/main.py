@@ -21,4 +21,4 @@ class HealthResponse(BaseModel):
     "/health", response_model=HealthResponse, operation_id="getHealth", tags=["health"]
 )
 def health() -> HealthResponse:
-    return HealthResponse(status="ok")
+    return HealthResponse(status="ok!")

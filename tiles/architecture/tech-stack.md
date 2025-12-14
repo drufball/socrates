@@ -8,11 +8,13 @@ Language-specific conventions belong in:
 ## Frontend
 
 - **Next.js** (TypeScript)
+- **Generated API client**: `swagger-typescript-api` (axios-based), generated into `frontend/lib/api/generated/api.ts`
 - UI/UX is TBD; we'll choose libraries once interaction patterns stabilize (chat UX, sliders, multi-choice, etc.).
 
 ## Backend
 
 - **FastAPI** (Python)
+- **OpenAPI as contract**: `backend/openapi.json` is generated from the FastAPI app and checked in for reviewable diffs.
 - **PydanticAI** for:
   - prompt orchestration
   - structured outputs (e.g., post schema)
@@ -30,5 +32,10 @@ Provider + model selection is TBD.
 
 - We should support swapping providers via config.
 - We'll likely want an evaluation harness for conversation quality + summary fidelity.
+
+## Local dev toolchain (current)
+
+- **Python deps**: `uv` (lockfile: `backend/uv.lock`)
+- **Node deps**: `npm` (lockfile: `frontend/package-lock.json`)
 
 
