@@ -17,7 +17,7 @@ FRONTEND_DIR = "frontend"
 local_resource(
     "backend_deps",
     dir=BACKEND_DIR,
-    cmd="uv sync --dev",
+    cmd="../scripts/install_deps.sh --backend",
     deps=[
         "backend/pyproject.toml",
         "backend/uv.lock",
@@ -41,7 +41,7 @@ local_resource(
 local_resource(
     "frontend_deps",
     dir=FRONTEND_DIR,
-    cmd="npm ci",
+    cmd="../scripts/install_deps.sh --frontend",
     deps=[
         "frontend/package.json",
         "frontend/package-lock.json",
